@@ -7,7 +7,6 @@ body {
 
 .header {
   display: grid;
-  max-height: 293px;
   font-size: 18px;
   grid-template-columns: 1fr min-content 1fr;
 }
@@ -27,11 +26,11 @@ body {
   display: inline-block;
 }
 
-.header__link {
+.menu_link {
   font-size: 18px;
 }
 
-.header__links-list_active {
+.menu__link_active {
   text-decoration: none;
 }
 
@@ -53,7 +52,7 @@ body {
   font-style: normal;
 }
 
-.header__address {
+.link_address {
   display: flex;
 }
 
@@ -63,7 +62,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 757px;
-  z-index: -2;
+  z-index: 0;
 }
 
 .overlay {
@@ -71,7 +70,8 @@ body {
   background-color: rgb(0, 0, 0, 0.6);
   inset: 0;
   z-index: -1;
-  max-height: 757px;
+  height: 100%;
+  width: 100%;
 }
 
 .cover__title {
@@ -118,7 +118,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 18.8px;
-  white-space: nowrap;
+  max-width: 637px;
 }
 
 .bet-button {
@@ -135,7 +135,6 @@ body {
 
 .lots {
   display: block;
-  min-height: 723px;
   max-width: 1052px;
   margin: 180px 24px 0;
 }
@@ -168,14 +167,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 334px;
-  min-height: 596px;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 596px;
   position: relative;
-  z-index: -2;
+  z-index: 0;
 }
 
 .card_type_film {
@@ -202,7 +201,6 @@ body {
 }
 
 .card__text {
-  height: 100%;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -214,10 +212,10 @@ body {
   color: #000;
   font-size: 20px;
   margin: 30px 102px 0 40px;
+  max-width: 192px;
 }
 
 .about {
-  min-height: 595px;
   max-width: 1052px;
   margin: 120px 24px 180px;
 }
@@ -265,7 +263,6 @@ body {
 .footer {
   display: grid;
   grid-template-columns: auto auto auto;
-  height: 180px;
 }
 
 .footer .address {
